@@ -1,0 +1,593 @@
+body {
+    font-family: Comic Sans, serif;
+	margin: 0;
+}
+
+.label {
+  color: white;
+}
+
+.login_Contenedor{
+    margin: 0 auto;
+    background-image: url("https://cdn.shopify.com/s/files/1/0032/0674/2114/files/main-banner_98c75f02-75f0-4fad-af13-69344842ba0c_1400x.png?v=1627073576"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   
+}
+
+.login_Bienvenidos{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.login_Bienvenidos_Titulo{
+     
+    font-size: 7vw;
+    font-color:white;
+    margin-bottom: 0px;
+}
+
+.login_Datos{
+    padding-top: 10px;
+    width: 100vw;
+    height: 55vh;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.login_Datos_Formulario{
+    padding: 10px;
+    padding-top: 30px;
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5vw;
+    color:white;
+    
+}
+
+.login_Datos_Formulario label{
+width: 35%;
+font-size: 2.3vw;
+}
+
+.login_Datos_Formulario input{
+width: 20vw;
+height: 5vh;
+border-radius: 10px;
+font-size: 1.3vw;
+padding-left: 10px;
+
+}
+
+.login_Datos_Botones{
+    margin-top:30px;
+    width: 35vw;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login_Datos_Botones button{
+    font-size: 1.5vw;
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+}
+
+.BordeTexto{
+    -webkit-text-stroke: 1px rgb(250, 249, 249);
+    
+
+}
+
+.menu_Contenedor{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.menu_Contenedor_Titulo{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    
+}
+.menu_Contenedor_Titulo h1{
+    margin: 0px;
+    padding: 3px;
+    font-size: 2.7vw;
+    color:white;
+}
+
+
+.menu_Contenedor_Menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 5.5vh;
+    font-size: 2.0vw;
+    background-color: #63109a;
+}
+
+
+.menu_Contenedor_Menu a{
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    
+    color: white ;
+}
+
+.Contenido_Usuarios{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 7vh;
+    
+
+}
+
+.Contenido_Usuarios_div{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Contenido_Usuarios_cuadros {
+    padding-bottom: 35px;
+    padding-right: 2vw;
+    width: 35vw;
+    display: flex;    
+    font-size: 1.5vw;
+}
+
+
+.Contenido_Usuarios_cuadros input{
+    width: 15vw;
+    height: 2.4vh;
+    font-size: 1vw;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.Contenido_Usuarios_cuadros label{
+    width: 13vw;
+    padding-left: 15px;
+}
+
+.botones_Usuarios{
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+
+ 
+}
+
+.botones_Usuarios_conte{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.botones_Usuarios_conte button{
+    width: 10vw;
+    height: 4vh;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    
+}
+
+
+.Contenido_Clientes{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 7vh;
+    
+
+}
+
+.Contenido_Clientes_div{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Contenido_Clientes_cuadros {
+    padding-bottom: 35px;
+    padding-right: 2vw;
+    width: 35vw;
+    display: flex;    
+    font-size: 1.5vw;
+}
+
+
+.Contenido_Clientes_cuadros input{
+    width: 15vw;
+    height: 2.4vh;
+    font-size: 1vw;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.Contenido_Clientes_cuadros label{
+    width: 13vw;
+    padding-left: 15px;
+}
+
+.botones_Clientes{
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+
+ 
+}
+
+.botones_Clientes_conte{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.botones_Clientes_conte button{
+    width: 10vw;
+    height: 4vh;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    
+}
+
+
+.Contenido_Proveedores{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 7vh;
+    
+
+}
+
+.Contenido_Proveedores_div{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.Contenido_Proveedores_cuadros {
+    padding-bottom: 35px;
+    padding-right: 2vw;
+    width: 35vw;
+    display: flex;    
+    font-size: 1.5vw;
+}
+
+
+.Contenido_Proveedores_cuadros input{
+    width: 15vw;
+    height: 2.4vh;
+    font-size: 1vw;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.Contenido_Proveedores_cuadros label{
+    width: 13vw;
+    padding-left: 15px;
+}
+
+.botones_Proveedores{
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+
+ 
+}
+
+.botones_Proveedores_conte{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.botones_Proveedores_conte button{
+    width: 10vw;
+    height: 4vh;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    
+}
+
+.Contenido_Productos{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 7vh;
+    
+
+}
+
+
+.Contenido_Productos_Archivo{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Contenido_Productos_Archivo label{
+    font-size: 3vh;
+    padding-right: 3vw;
+   
+}
+
+.Contenido_Productos_Archivo input{   
+    font-size: 2.6vh;
+    padding-right: 2vw;
+    
+}
+
+
+.Contenido_Productos_Boton button{
+    width: 10vw;
+    height: 4vh;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    
+}
+
+.Contenido_Reportes{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+ 
+}
+
+.Contenido_Reportes input{
+    width: 25vw;
+    height: 5vh;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    
+}
+
+.Contenido_Ventas{
+    height: 90vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+ 
+}
+.Contenido_Ventas_Datos{
+    height: 4vh;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+    font-size: 1.4vw;
+    padding-top: 3vh;
+}
+.Contenido_Ventas_Datos button{
+    font-size: 1vw;
+    
+}
+
+.Ventas_Titulo{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Ventas_Titulo th{
+    margin: 3px;
+    
+}
+
+.Ventas_Contenido{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Contenido_Ventas_Detalle{
+    width: 90vw;
+}
+
+
+.Ventas_Codigo{
+    width: 17vw;
+    height: 4vh;
+    font-size: 1.4vw;
+    
+}
+
+.Ventas_Consultar {
+    width: 17vw;
+    height: 4vh;
+    font-size: 1.4vw;
+    border: none !important;
+}
+
+.Ventas_Consultar button{
+    width: 17vw;
+    height: 4vh;
+    font-size: 1.1vw;
+   
+}
+
+.Ventas_Nombre{
+    width: 25vw;
+    height: 4vh;
+    font-size: 1.4vw;
+}
+
+.Ventas_Cantidad{
+    width: 7vw;
+    height: 4vh;
+    font-size: 1.4vw;
+}
+
+.Ventas_Valor_Total{
+    width: 17vw;
+    height: 4vh;
+    font-size: 1.4vw;
+}
+
+.Ventas_Contenido td {
+    border: 1px solid black ;
+    margin: 3px;
+}
+
+.Ventas_Subtotales{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.Ventas_Codigo_Subtotales{
+    width: 17vw;
+    height: 4vh;
+}
+
+.Ventas_Consultar_Subtotales{
+    width: 17vw;
+    height: 4vh;
+}
+.Ventas_Nombre_Subtotales{
+    width: 18vw;
+    height: 4vh;
+}
+.Ventas_Cantidad_Subtotales{
+    width: 14vw;
+    height: 4vh;
+}
+
+.Ventas_Valor_Subtotales{
+    width: 17vw;
+    height: 4vh;
+    border: 1px solid black ;
+}
+.Ventas_Subtotales td{
+    margin: 3.8px;
+    font-size: 1.4vw;
+}
+
+
+.Ventas_Valor_Subtotales button{
+    width: 17vw;
+    height: 4vh;
+    border: none !important;
+    font-size: 1.4vw ;
+    
+}
+
+.AnchoTabla{
+	width: 90vw !important;
+}
+
+.Contenido_Ventas_Informacion {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 97%;
+}
+
+.tabla_Datos {
+    width: 51%;
+    margin-right: 81px;
+}
+
+.tabla_Datos td {
+    border-width: 2px;
+    padding-left: 12px;
+}
+
+.tabla_CodigoTotales {
+    width: 40%;
+}
+
+.tabla_CodigoTotales td {
+    border-width: 2px;
+    padding-left: 12px;
+}
+
+.tabla_td_select {
+    width: -webkit-fill-available;
+    border: none;
+
+}
+
+.border_input {
+    border: none;
+
+}
+
+.Contenido_Ventas_Factura {
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 97%;
+}
+
+.tabla_Factura {
+    width: 97% !important;
+    border: solid 2px #000000 !important;
+    border: none !important;
+}
+
+.tabla_Factura th {
+    text-align: center;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
+.bordes_Tabla {
+    border: 1px solid;
+}
+
+.color_Gris {
+    background-color: lightgrey;
+}
+

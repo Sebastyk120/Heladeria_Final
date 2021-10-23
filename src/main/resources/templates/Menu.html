@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<nav>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link th:href="@{/styles/Estilos.css}" rel="stylesheet" />
+</head>
+
+
+<body>
+<div class="menu_Contenedor">
+
+    <div class="menu_Contenedor_Titulo login_Contenedor">
+        <h1>♣Heladeria Snowy♣</h1>
+    </div>
+    <div class="menu_Contenedor_Menu">
+
+        <a th:href="@{/listarUsuario}" class="menu_Contenedor_Usuarios">
+            Usuarios
+        </a>
+        <a th:href="@{/listarCliente}" class= "menu_Contenedor_Clientes">
+            Clientes
+        </a>
+        <a th:href="@{/listarProveedor}" class="menu_Contenedor_Proveedores">
+            Proveedores
+        </a>
+        <a th:href="@{/listarProducto}" class= "menu_Contenedor_Productos">
+            Productos
+        </a>
+        <a  th:href="@{/mostrarFormVentas}" class="menu_Contenedor_Ventas">
+            Ventas
+        </a>
+        <a  th:href="@{/reportes}" class="menu_Contenedor_Reportes">
+            Reportes
+        </a>
+        <div class="animation star-home"></div>
+
+    <p>
+        Creado por <span>Grupo 7</span>
+    </p>
+
+    </div>
+
+</div>
+
+</body>
+</nav>
+</html>

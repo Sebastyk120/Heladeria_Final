@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link th:href="@{/styles/Estilos.css}" rel="stylesheet" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+
+<body style="margin: 0px;">
+
+
+	<div class="login_Contenedor">
+
+		<div class="login_Bienvenidos">
+			<H1 class="login_Bienvenidos_Titulo BordeTexto">♣Heladeria Snowy♣</H1>
+		</div>
+
+
+		<form th:action="@{/validar}" method="POST"  class="login_Datos">
+						
+			<!-- Action: donde se envia -->
+			<div class="login_Datos_Formulario">
+				<label for="usuario" color="white"> Usuario </label> <input type="text"
+					name="usuario" placeholder="Digite nombre de usuario"><BR>
+			</div>
+			<div class="login_Datos_Formulario">
+				<label for="clave_Usuario"> Contraseña</label> <input
+					type="password" name="clave_Usuario"
+					placeholder="Digite la Contraseña"><BR>
+			</div>
+			<div th:if="${#request.getParameter('error')}">Usuario y Contraseña no validos</div>
+
+			<div class="login_Datos_Botones">
+				<button type="submit" name="aceptar" style="margin-right: 25px;">
+					Aceptar</button>
+				<button type="reset" name="cancelar">Cancelar</button>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+
+</html>

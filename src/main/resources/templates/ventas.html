@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas</title>
+  <link th:href="@{/styles/Estilos.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+<div class="menu_Contenedor">
+  <div class="menu_Contenedor_Titulo login_Contenedor">
+    <h1>Heladeria Snowy</h1>
+  </div>
+
+  <div class="menu_Contenedor_Menu">
+    <a th:href="@{/listarUsuario}" class="menu_Contenedor_Usuarios"> Usuarios </a>
+
+    <a th:href="@{/listarCliente}" class="menu_Contenedor_Clientes"> Clientes </a>
+
+    <a th:href="@{/listarProveedor}" class="menu_Contenedor_Proveedores">Proveedores </a>
+
+    <a th:href="@{/listarProducto}" class="menu_Contenedor_Productos"> Productos </a>
+
+    <a th:href="@{/mostrarFormVentas}" class="menu_Contenedor_Ventas"> Ventas </a>
+
+    <a th:href="@{/reportes}" class="menu_Contenedor_Reportes"> Reportes </a>
+
+  </div>
+</div>
+
+<form action= method="POST">
+
+  <form class="Contenido_Ventas" action="Ventas.jsp" method="GET">
+    <div class="Contenido_Ventas_Datos">
+      <label for="cedula_Ventas"> Cédula </label>
+      <input type="text" name="cedula_Ventas">
+      <button type="submit" name="cargar_Ventas"> Consultar </button>
+
+
+      <label for="nombre_Cliente_Ventas"> Cliente </label>
+      <input type="text" name="nombre_Cliente_Ventas">
+      <label for="codigo_Consecutivo"> Consec. </label>
+      <input type="text" name="codigo_Consecutivo">
+
+    </div>
+  </form>
+
+
+  <table class="Contenido_Ventas_Detalle">
+
+    <tr class="Ventas_Titulo">
+      <th class="Ventas_Codigo">Cod. Producto</th>
+      <th class='Ventas_Consultar'> </th>
+      <th class="Ventas_Nombre">Nombre Producto</th>
+      <th class="Ventas_Cantidad">Cant.</th>
+      <th class="Ventas_Valor_Total">Vlr. Total</th>
+    </tr>
+
+    <form action="" method="GET">
+      <tr class="Ventas_Contenido">
+        <td class="Ventas_Codigo"></td>
+        <td class='Ventas_Consultar'>
+          <button type="submit" name="cargar_Producto"> Consultar </button>
+        </td>
+        <td class="Ventas_Nombre"></td>
+        <td class="Ventas_Cantidad"></td>
+        <td class="Ventas_Valor_Total"></td>
+      </tr>
+    </form>
+    <form action="" method="GET">
+      <tr class="Ventas_Contenido">
+        <td class="Ventas_Codigo"></td>
+        <td class='Ventas_Consultar'>
+          <button type="submit" name="cargar_Producto"> Consultar </button>
+        </td>
+        <td class="Ventas_Nombre"></td>
+        <td class="Ventas_Cantidad"></td>
+        <td class="Ventas_Valor_Total"></td>
+      </tr>
+    </form>
+    <form action="" method="GET">
+      <tr class="Ventas_Contenido">
+        <td class="Ventas_Codigo"></td>
+        <td class='Ventas_Consultar'>
+          <button type="submit" name="cargar_Producto"> Consultar </button>
+        </td>
+        <td class="Ventas_Nombre"></td>
+        <td class="Ventas_Cantidad"></td>
+        <td class="Ventas_Valor_Total"></td>
+      </tr>
+    </form>
+    <form action="" method="GET">
+      <tr class="Ventas_Contenido">
+        <td class="Ventas_Codigo"></td>
+        <td class='Ventas_Consultar'>
+          <button type="submit" name="cargar_Producto"> Consultar </button>
+        </td>
+        <td class="Ventas_Nombre"></td>
+        <td class="Ventas_Cantidad"></td>
+        <td class="Ventas_Valor_Total"></td>
+      </tr>
+    </form>
+    <form action="" method="GET">
+      <tr class="Ventas_Contenido">
+        <td class="Ventas_Codigo"></td>
+        <td class='Ventas_Consultar'>
+          <button type="submit" name="cargar_Producto"> Consultar </button>
+        </td>
+        <td class="Ventas_Nombre"></td>
+        <td class="Ventas_Cantidad"></td>
+        <td class="Ventas_Valor_Total"></td>
+      </tr>
+    </form>
+
+    <tr class="Ventas_Subtotales">
+      <td class="Ventas_Codigo_Subtotales"></td>
+      <td class='Ventas_Consultar_Subtotales'></td>
+      <td class="Ventas_Nombre_Subtotales"></td>
+      <td class="Ventas_Cantidad_Subtotales"> Total Venta</td>
+      <td class="Ventas_Valor_Subtotales"></td>
+    </tr>
+
+    <tr class="Ventas_Subtotales">
+      <td class="Ventas_Codigo_Subtotales"></td>
+      <td class='Ventas_Consultar_Subtotales'></td>
+      <td class="Ventas_Nombre_Subtotales"></td>
+      <td class="Ventas_Cantidad_Subtotales"> Total IVA</td>
+      <td class="Ventas_Valor_Subtotales"></td>
+    </tr>
+
+    <tr class="Ventas_Subtotales">
+      <td class="Ventas_Codigo_Subtotales"></td>
+      <td class='Ventas_Consultar_Subtotales'></td>
+      <td class="Ventas_Nombre_Subtotales"></td>
+      <td class="Ventas_Cantidad_Subtotales"> Total con IVA</td>
+      <td class="Ventas_Valor_Subtotales"></td>
+    </tr>
+    <tr class="Ventas_Subtotales">
+      <td class="Ventas_Codigo_Subtotales"></td>
+      <td class='Ventas_Consultar_Subtotales'></td>
+      <td class="Ventas_Nombre_Subtotales"></td>
+      <td class="Ventas_Cantidad_Subtotales"> </td>
+      <td class="Ventas_Valor_Subtotales">
+        <button type="submit" name="cargar_Confirmar"> Confirmar </button>
+      </td>
+    </tr>
+
+
+
+  </table>
+
+
+</form>
+</body>
+
+</html>

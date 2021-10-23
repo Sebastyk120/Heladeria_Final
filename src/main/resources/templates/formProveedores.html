@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proveedores</title>
+
+	<link th:href="@{/styles/Estilos.css}" rel="stylesheet" />
+
+</head>
+<body>
+<form th:action="@{/saveProveedor}" th:object=${proveedor}
+	  method="POST">
+	<div class="menu_Contenedor">
+		<div class="menu_Contenedor_Titulo login_Contenedor">
+			<h1>♣Heladeria Snowy♣</h1>
+		</div>
+
+		<div class="menu_Contenedor_Menu">
+			<a th:href="@{/listarUsuario}" class="menu_Contenedor_Usuarios">
+				Usuarios
+			</a>
+			<a th:href="@{/listarCliente}" class= "menu_Contenedor_Clientes">
+				Clientes
+			</a>
+			<a th:href="@{/listarProveedor}" class="menu_Contenedor_Proveedores">
+				Proveedores
+			</a>
+			<a  th:href="@{/listarProducto}" class= "menu_Contenedor_Productos">
+				Productos
+			</a>
+			<a  th:href="@{/mostrarFormVentas}" class="menu_Contenedor_Ventas">
+				Ventas
+			</a>
+			<a th:href="@{/reportes}" class="menu_Contenedor_Reportes">
+				Reportes
+			</a>
+
+		</div>
+	</div>
+
+	<div class="Contenido_Proveedores">
+		<div class="Contenido_Proveedores_div">
+			<div class="Contenido_Proveedores_cuadros">
+				<label for="nit"> NIT </label> <input th:field="*{nit_Proveedor}"
+													  type="text" name="nit_Proveedores" placeholder="Digite el NIT" /><BR>
+
+			</div>
+
+			<div class="Contenido_Proveedores_cuadros">
+				<label for="Telefono"> Telefono </label> <input
+					th:field="*{telefono_Proveedor}" type="text"
+					name="telefono_Proveedores" placeholder="Digite el telefono" /><BR>
+			</div>
+
+		</div>
+		<div class="Contenido_Proveedores_div">
+			<div class="Contenido_Proveedores_cuadros">
+				<label for="Nombre"> Nombre Proveedor </label> <input
+					th:field="*{nombre_Proveedor}" type="text"
+					name="nombre__Proveedores" placeholder="Digite el nombre" /><BR>
+
+			</div>
+
+			<div class="Contenido_Proveedores_cuadros">
+				<label for="Ciudad"> Ciudad </label> <input
+					th:field="*{ciudad_Proveedor}" type="text"
+					name="ciudad_Proveedores" placeholder="Digite la ciudad" /><BR>
+			</div>
+
+		</div>
+
+		<div class="Contenido_Proveedores_div">
+			<div class="Contenido_Proveedores_cuadros">
+				<label for="Dirección"> Dirección </label> <input
+					th:field="*{direccion_Proveedor}" type="text"
+					name="direccion_Proveedores" placeholder="Digite la direccion" /><BR>
+			</div>
+		</div>
+	</div>
+	<div class="botones_Proveedores">
+		<div class="botones_Proveedores_conte">
+			<button type="submit" name="consultar_Proveedores">Guardar
+			</button>
+		</div>
+
+	</div>
+</form>
+</body>
+
+</html>
+

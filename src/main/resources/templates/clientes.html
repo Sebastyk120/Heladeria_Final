@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>Clientes</title>
+	<!-- CSS only -->
+	<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet">
+	<link th:href="@{/styles/Estilos.css}" rel="stylesheet" />
+
+</head>
+<body>
+<div class="menu_Contenedor">
+	<div class="menu_Contenedor_Titulo login_Contenedor">
+		<h1>♣Heladeria Snowy♣</h1>
+	</div>
+
+	<div class="menu_Contenedor_Menu">
+		<a th:href="@{/listarUsuario}" class="menu_Contenedor_Usuarios">
+			Usuarios
+		</a>
+		<a th:href="@{/listarCliente}" class= "menu_Contenedor_Clientes">
+			Clientes
+		</a>
+		<a th:href="@{/listarProveedor}" class="menu_Contenedor_Proveedores">
+			Proveedores
+		</a>
+		<a  th:href="@{/listarProducto}" class= "menu_Contenedor_Productos">
+			Productos
+		</a>
+		<a  th:href="@{/mostrarFormVentas}" class="menu_Contenedor_Ventas">
+			Ventas
+		</a>
+		<a  th:href="@{/reportes}" class="menu_Contenedor_Reportes">
+			Reportes
+		</a>
+
+
+	</div>
+
+</div>
+<div style="margin-top: 3vw;">
+
+	<table class="AnchoTabla table table-striped mx-auto">
+		<thead>
+		<tr>
+			<th>CEDULA</th>
+			<th>NOMBRE</th>
+			<th>CORREO</th>
+			<th>DIRECCION</th>
+			<th>TELEFONO</th>
+			<th>ACCIONES</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="c:${clientes}">
+			<td th:text="${c.cedula_Cliente}"></td>
+			<td th:text="${c.nombre_Cliente}"></td>
+			<td th:text="${c.correo_Cliente}"></td>
+			<td th:text="${c.direccion_Cliente}"></td>
+			<td th:text="${c.telefono_Cliente}"></td>
+			<td><a th:href="@{/editarCliente/}+${c.cedula_Cliente}"
+				   class="btn btn-outline-primary btn-sm">Editar</a> <a
+					th:onclick="eliminarCliente([[${c.cedula_Cliente}]])"
+					class="btn btn-danger btn-sm">Eliminar</a></td>
+
+		</tr>
+		</tbody>
+	</table >
+	<div class="AnchoTabla mx-auto">
+		<a th:href="@{/newCliente}" class="btn btn-primary">Nuevo Cliente</a>
+	</div>
+
+</div>
+<script src="https:/code.jquery.com/jquery-3.4.1.js"></script>
+<script src="http://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="funciones.js"></script>
+</body>
+</html>
